@@ -5,6 +5,8 @@
  */
 package br.com.wpsistemas.view;
 
+import br.com.wpsistemas.controler.UsuarioControler;
+import br.com.wpsistemas.model.dao.entitades.Usuario;
 import java.util.Date;
 import javax.swing.JFrame;
 
@@ -38,10 +40,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMnCadastro = new javax.swing.JMenu();
         jMnItEstado = new javax.swing.JMenuItem();
         jMnItCidade = new javax.swing.JMenuItem();
+        jMnItUsuario = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnItSair = new javax.swing.JMenuItem();
 
         jMenu1.setText("File");
@@ -52,6 +57,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Exemplo Sistemas em Swing");
+
+        javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
+        jDesktopPanePrincipal.setLayout(jDesktopPanePrincipalLayout);
+        jDesktopPanePrincipalLayout.setHorizontalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 597, Short.MAX_VALUE)
+        );
+        jDesktopPanePrincipalLayout.setVerticalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 378, Short.MAX_VALUE)
+        );
 
         jMnCadastro.setMnemonic('C');
         jMnCadastro.setText("Cadastro");
@@ -68,6 +84,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMnCadastro.add(jMnItCidade);
+
+        jMnItUsuario.setText("Usuario");
+        jMnItUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnItUsuarioActionPerformed(evt);
+            }
+        });
+        jMnCadastro.add(jMnItUsuario);
+        jMnCadastro.add(jSeparator1);
 
         jMnItSair.setMnemonic('r');
         jMnItSair.setText("Sair");
@@ -86,11 +111,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 559, Short.MAX_VALUE)
+            .addComponent(jDesktopPanePrincipal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 346, Short.MAX_VALUE)
+            .addComponent(jDesktopPanePrincipal)
         );
 
         pack();
@@ -103,6 +128,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jMnItSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnItSairActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMnItSairActionPerformed
+
+    private void jMnItUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnItUsuarioActionPerformed
+        abrirTelaUsuarioCons();
+    }//GEN-LAST:event_jMnItUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,6 +170,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane jDesktopPanePrincipal;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
@@ -149,5 +179,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMnItCidade;
     private javax.swing.JMenuItem jMnItEstado;
     private javax.swing.JMenuItem jMnItSair;
+    private javax.swing.JMenuItem jMnItUsuario;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
+
+    // Controler
+    private UsuarioControler usuarioControler;
+
+    public void setUsuario(Usuario usuarioLogado) {
+        this.setTitle("Exemplo Swing - User: " + usuarioLogado.getNome());
+    }
+
+    private void abrirTelaUsuarioCons() {
+        if (this.usuarioControler == null) {
+            this.usuarioControler = new UsuarioControler(jDesktopPanePrincipal);
+        }
+        this.usuarioControler.abrirUsuarioICons();
+
+    }
+
 }

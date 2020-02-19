@@ -5,7 +5,7 @@
  */
 package br.com.wpsistemas.exemploswing;
 
-import br.com.wpsistemas.view.TelaPrincipal;
+import br.com.wpsistemas.view.LoginFrm;
 
 /**
  *
@@ -17,7 +17,9 @@ public class ExemploSwing {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new TelaPrincipal().setVisible(true);
+        LoginFrm login = new LoginFrm(); 
+//        login.setLocationRelativeTo(null);
+        login.setVisible(true);
     }
-    
+
 }
