@@ -23,8 +23,8 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jToolBar1" pref="498" max="32767" attributes="0"/>
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jToolBar1" max="32767" attributes="0"/>
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -49,7 +49,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jBtnNovo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Novo"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/novo.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Novo"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -58,7 +60,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnSalvar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Salvar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/save.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Salvar"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -67,7 +71,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnExcluir">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Apagar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/delete.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Excluir"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -76,7 +82,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnPesquisar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pesquisar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/pesquisar.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Pesquisar"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -98,7 +106,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnFechar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Fechar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/exit.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Fechar"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -124,14 +134,14 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jTxfCodigo" min="-2" pref="68" max="-2" attributes="0"/>
-                      <Component id="jTxfNome" pref="283" max="32767" attributes="0"/>
-                      <Component id="jTxfEmail" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTxfNome" max="32767" attributes="0"/>
+                      <Component id="jTxfEmail" alignment="0" pref="283" max="32767" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jPwfSenha" alignment="0" pref="121" max="32767" attributes="0"/>
+                          <Component id="jPwfSenha" alignment="0" pref="123" max="32767" attributes="0"/>
                           <Component id="jTxfUserName" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

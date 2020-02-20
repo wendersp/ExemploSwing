@@ -61,28 +61,28 @@ public class UsuarioIFrm extends javax.swing.JInternalFrame {
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
 
-        jBtnNovo.setText("Novo");
+        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/novo.png"))); // NOI18N
         jBtnNovo.setToolTipText("Novo");
         jBtnNovo.setFocusable(false);
         jBtnNovo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBtnNovo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jBtnNovo);
 
-        jBtnSalvar.setText("Salvar");
+        jBtnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/save.png"))); // NOI18N
         jBtnSalvar.setToolTipText("Salvar");
         jBtnSalvar.setFocusable(false);
         jBtnSalvar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBtnSalvar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jBtnSalvar);
 
-        jBtnExcluir.setText("Apagar");
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/delete.png"))); // NOI18N
         jBtnExcluir.setToolTipText("Excluir");
         jBtnExcluir.setFocusable(false);
         jBtnExcluir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jBtnExcluir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jBtnExcluir);
 
-        jBtnPesquisar.setText("Pesquisar");
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setToolTipText("Pesquisar");
         jBtnPesquisar.setFocusable(false);
         jBtnPesquisar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -95,7 +95,7 @@ public class UsuarioIFrm extends javax.swing.JInternalFrame {
         jToolBar1.add(jBtnPesquisar);
         jToolBar1.add(filler1);
 
-        jBtnFechar.setText("Fechar");
+        jBtnFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/exit.png"))); // NOI18N
         jBtnFechar.setToolTipText("Fechar");
         jBtnFechar.setFocusable(false);
         jBtnFechar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -131,12 +131,12 @@ public class UsuarioIFrm extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTxfCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxfNome, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
-                    .addComponent(jTxfEmail)
+                    .addComponent(jTxfNome)
+                    .addComponent(jTxfEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPwfSenha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                        .addComponent(jPwfSenha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                         .addComponent(jTxfUserName, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,8 +168,8 @@ public class UsuarioIFrm extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 498, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

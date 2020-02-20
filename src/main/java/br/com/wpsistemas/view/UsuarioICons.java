@@ -63,7 +63,7 @@ public class UsuarioICons extends javax.swing.JInternalFrame {
 
         jCboPesquisarPor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NOME", "CODIGO" }));
 
-        jBtnPesquisar.setText("Pesquisar");
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setToolTipText("Pesquisar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -111,7 +111,7 @@ public class UsuarioICons extends javax.swing.JInternalFrame {
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
 
-        jBtnNovo.setText("Novo");
+        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/novo.png"))); // NOI18N
         jBtnNovo.setToolTipText("Novo");
         jBtnNovo.setActionCommand("novoPais");
         jBtnNovo.setFocusable(false);
@@ -119,7 +119,7 @@ public class UsuarioICons extends javax.swing.JInternalFrame {
         jBtnNovo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jBtnNovo);
 
-        jBtnEditar.setText("Editar");
+        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/editdocuments.png"))); // NOI18N
         jBtnEditar.setToolTipText("Editar");
         jBtnEditar.setFocusable(false);
         jBtnEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -127,7 +127,7 @@ public class UsuarioICons extends javax.swing.JInternalFrame {
         jToolBar1.add(jBtnEditar);
         jToolBar1.add(filler1);
 
-        jBtnFechar.setText("Fechar");
+        jBtnFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/exit.png"))); // NOI18N
         jBtnFechar.setToolTipText("Fechar");
         jBtnFechar.setFocusable(false);
         jBtnFechar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -149,7 +149,7 @@ public class UsuarioICons extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

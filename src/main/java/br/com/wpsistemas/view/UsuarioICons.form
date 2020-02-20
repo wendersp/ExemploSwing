@@ -35,7 +35,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="216" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="202" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -112,7 +112,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnPesquisar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pesquisar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/pesquisar.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Pesquisar"/>
           </Properties>
         </Component>
@@ -149,7 +151,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jBtnNovo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Novo"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/novo.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Novo"/>
             <Property name="actionCommand" type="java.lang.String" value="novoPais"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -159,7 +163,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnEditar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Editar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/editdocuments.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Editar"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -178,7 +184,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnFechar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Fechar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icones/exit.png"/>
+            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Fechar"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
